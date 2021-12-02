@@ -96,7 +96,7 @@
             <td style="padding:15px;width:25%;vertical-align:middle">
 
 
-              <a href="images/overview_img.pdf"><img style="width:125%;max-width:125%" alt="UncertaintyImg" src="images/overview_img.drawio.png" class="hoverZoomLink"></a>
+              <a href="images/overview_img.pdf"><img style="width:125%;max-width:125%" alt="UncertaintyImg" src="images/att_over.png" class="hoverZoomLink"></a>
               
 
             </td>
@@ -113,10 +113,14 @@
                
               <br>
               
-              <a href="https://arxiv.org/abs/2111.15656">arXiv</a>
-              <p></p>
-              <p> In order to avoid reinforcing errors caused by label noise, we propose an uncertainty-aware mean teacher framework which implicitly filters incorrect pseudo-labels during training. Leveraging model uncertainty 
-                allows the mean teacher network to perform implicit filtering by down-weighing losses corresponding uncertain pseudo-labels. </p>
+<a href="https://arxiv.org/abs/2109.14651">arXiv</a>
+	      <a href="https://github.com/deeptibhegde/AttentivePrototypeSFUDA">code</a>
+              <p></p> 
+              <p>  Addressing the limitations of traditional feature aggregation methods for prototype computation in the presence of noisy labels, 
+		      we utilize a transformer module to identify outlier ROI's that correspond to incorrect, over-confident annotations, and compute an attentive 
+		      class prototype. Under an iterative training strategy, the losses associated with noisy pseudo labels are down-weighed and thus refined in the process of 
+		      self-training. To validate the effectiveness of our proposed approach, we examine the domain shift associated with networks trained on large, label-rich datasets 
+		      (such as the Waymo Open Dataset and nuScenes) and evaluate on smaller, label-poor datasets (such as KITTI) and vice-versa. </p>
             </td>
           </tr> 	
 		
@@ -146,14 +150,10 @@
                
               <br>
               
-              <a href="https://arxiv.org/abs/2109.14651">arXiv</a>
-	      <a href="https://github.com/deeptibhegde/AttentivePrototypeSFUDA">code</a>
+              <a href="https://arxiv.org/abs/2111.15656">arXiv</a>
               <p></p>
-              <p>  Addressing the limitations of traditional feature aggregation methods for prototype computation in the presence of noisy labels, 
-		      we utilize a transformer module to identify outlier ROI's that correspond to incorrect, over-confident annotations, and compute an attentive 
-		      class prototype. Under an iterative training strategy, the losses associated with noisy pseudo labels are down-weighed and thus refined in the process of 
-		      self-training. To validate the effectiveness of our proposed approach, we examine the domain shift associated with networks trained on large, label-rich datasets 
-		      (such as the Waymo Open Dataset and nuScenes) and evaluate on smaller, label-poor datasets (such as KITTI) and vice-versa. </p>
+              <p> In order to avoid reinforcing errors caused by label noise, we propose an uncertainty-aware mean teacher framework which implicitly filters incorrect pseudo-labels during training. Leveraging model uncertainty 
+                allows the mean teacher network to perform implicit filtering by down-weighing losses corresponding uncertain pseudo-labels. </p>
             </td>
           </tr> 
 
